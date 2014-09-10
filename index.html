@@ -1,27 +1,312 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>Basic Bootstrap Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style type="text/css">
+    body{
+      font-family: "Arial","sans-serif";
+      width: 100%;
+    }
+    
+    #concertStart{
+      font-size: 18pt;
+      text-align: center;
+       }
+    #city{
+      font-size: 16pt;
+      text-align: center;
+    }
+    #backgroundTop{
+      background-image: url("img/2.jpg");
+      height: 490px;
+      border-bottom: thick solid #f63535;
+    }
+    #backgroundMiddle{
+      background-image: url("img/8.jpg");
+      height: 210px;
+      
+    }
+    #backgroundDown{
+      background-image: url("img/9.jpg");
+      height: 308px;
+      }
+    .bandNameConcert{
+      
+      position: relative;
+      
+      font-size: 28pt;
+      font-weight: bold;
+      color:#FFFFFF;
+      text-align: center ;
+      
+      vertical-align: bottom;
+    }
+     
+    #ticketPreOrd{
+      text-align: center ;
+      text-transform: uppercase;
+      color:#FFFFFF;
+      font-size: 20pt;
+    }
+    #overlined{
+      text-decoration: line-through;
+      font-weight: bold;
+      font-size: 25px;
+      text-transform: uppercase;
+    }
+    
+    #usd30{
+      text-align: center ;
+      text-transform: uppercase;
+      color:#FFFFFF;
+      border-width: 5pt;
+      border-color::#FFFFFF; 
+      font-size: 18pt;
+      height:75px;
+      border-style: solid;
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        }
+    #usd45{
+      text-align: center ;
+      text-transform: uppercase;
+      background-color:#f63535;
+      border-color:#f63535;
+      border-width: 5pt;
+      height:75px;
+      color:#FFFFFF;
+      border-style: solid;
+      font-size: 18pt;
+      }
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    a:hover { 
+    text-decoration: none;}
+    .icondown{text-align: center;
+      padding-top: 2%}
+    .heading1{
+      text-align: center;
+      margin-top: 20px;
+      font-size: 28pt;
+      line-height: 34pt;
+      color:#000000;
+    }
+    #box1Normal{
+      border-style: solid;
+      border-color:#d3d3d3;
+      margin-top: 10%;
+      border-width: 0.5pt;
+      padding: 5%;
+      height: 470px;
+    }
+    #box1Normal1{
+      font-size: 19pt;
+      height:50px;
+      text-align: center;
+      text-transform: uppercase;
+      background-color:#1c3c4d;
+      color:#FFFFFF;
+    }
+    #box1Normal2{
+      font-size: 35pt;
+      text-align: center;
+      text-transform: uppercase;
+      background-color:#ffffff;
+      color:#1c3c4d;
+      font-weight: bold;
+    }
+    #box2vip{
+      border-style: solid;
+      border-color:#f63535;
+      margin-top: 10%;
+      border-width: 0.5pt;
+      padding: 5%;
+      height: 470px;
+      }
+    #box2vip1{
+      font-size: 19pt;
+      height:50px;
+      text-align: center;
+      text-transform: uppercase;
+      background-color:#f63535;
+      color:#FFFFFF;
+      }
+    #box2vip2{
+      font-size: 35pt;
+      text-align: center;
+      text-transform: uppercase;
+      background-color:#ffffff;
+      color:#f63535;
+      font-weight: bold;
+      
+      }
+    #box1text{
+      line-height:23pt;
+      color:grey;
+      text-align: center;
+      font-size: 11pt;
+
+      }
+    #box2text>p{
+      
+    }
+    .greyboarder{
+      border-bottom:normal solid #d3d3d3;
+       }
+    .articl{
+      padding-left: 8%;
+    }
+    .picturebar{
+      padding-left: 1%;
+    }
+
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <div class="row">
+      <div class="col-md-4 col-sm-4 col-lg-4" align="center"></br>
+        <p >
+          <img src="img/1.png">
+        </p>
+      </div>
+      <div class="col-md-4 col-sm-4 col-lg-4" align = "center">
+      </div>
+      <div class="col-md-4 col-sm-4 col-lg-4" ><br/>
+        <span id="concertStart" >Concert start:
+          <b> 20 may 2014</b><br/>
+        </span>
+        <span id="city">City, Hall Name, Street 24</span>
+      </div><!-- first row end-->
+    </div>
+    <div  id ="backgroundTop" >
+      <div class="row" >
+        <div class="col-md-12 col-sm-12 bandNameConcert"  >
+          <p>Band Name Concert</p>
+        </div>
+      </div>
+      <div class="row" >
+        <div class="col-md-12 col-sm-12">
+          <p id ="ticketPreOrd"> <span id="overlined">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span> ticket in pre-order <span id="overlined">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span></p></br>
+        </div>
+      </div>
+      <div class="row" >
+        <div class="col-md-3 col-sm-3"align ="right">
+        </div>
+        <div class="col-md-3 col-sm-3"align ="right">
+          <a href="http://www.google.com.ua">
+            <div id="usd30" >30$ normal
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-3">
+          <a href="http://www.google.com.ua">
+            <div id="usd45"  >45$ VIP
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-3"align ="right">
+        </div>
+      </div>
+      <div class="row" >
+        <div class="col-md-12 col-sm-12 icondown"><img src="img/3.png">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="heading1"  >
+      Select a ticket</div>
+      <div class="row">
+        <div class="col-md-2 col-sm-2" >
+        </div>
+        <div class="col-md-4 col-sm-4" >
+          <div id = "box1Normal">
+            <div id = "box1Normal1">normal</div>
+            <div id = "box1Normal2">30$</div>
+            <div id = "box1text"><p style="font-size:25px;">Lorem Ipsum jest tekstem<p/>In vel augue consequat<br/>Placerat lorem id, convallis felis<br/>Suspendisse ut ligula ullamcorper</div></br>
+            <hr style="background:#d3d3d3;  height:1px; line-height:3;" /><hr style="background:#d3d3d3; border:0; height:1px" />
+            
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4" >
+          <div id="box2vip">
+            <div id="box2vip1">vip</div>
+            <div id = "box2vip2">45$</div>
+            <div id ="box1text"><p style="color:#f63535;font-size:25px;">Lorem Ipsum jest tekstem<p>In vel augue consequat <br/>Placerat lorem id, convallis felis<br/> Suspendisse ut ligula ullamcorper<br/> convallis felis <br/>convallis felis</div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-2" >
+        </div>
+      </div>
+    </div>
+    <br/>
+    <hr style="background:#d3d3d3;  height:1px; line-height:3;" />
+    <div class="container">
+        <div class ="heading1">About Concert</div><br/>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 articl" >Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus.</div>
+        <div class="col-md-6 col-sm-6 articl" ><img src="img/4.jpg" class="img-circle"></div>
+      </div>
+    </div>
+    <br/>
+    <hr style="background:#d3d3d3;  height:1px; line-height:3;" />
+    <div class="container">
+      <div class ="heading1">Last Concert</div><br/>
+      <div class="row articl" >
+        <div class="col-md-3 col-sm-3" align="center"><img src="img/5.jpg"> </div>
+        <div class="col-md-3 col-sm-3" align="center"><img src="img/6.jpg"> </div>
+        <div class="col-md-3 col-sm-3" align="center"><img src="img/7.jpg"> </div>
+      </div>
+      <div class="row articl">
+        <div class="col-md-3 col-sm-3" align="center"><img src="img/6.jpg"> </div>
+        <div class="col-md-3 col-sm-3" align="center"><img src="img/7.jpg"> </div>
+        <div class="col-md-3 col-sm-3" align="center"><img src="img/5.jpg"> </div>
+        </div>
+    </div><br/><br/><br/>
+    <div  id ="backgroundMiddle" height=80%><p class="bandNameConcert">Check map</p><p id ="ticketPreOrd">City, Hall Name, Street 24</p></div>
+    <div  id ="backgroundDown" >
+      <div class="row" >
+        <div class="col-md-12 col-sm-12 bandNameConcert"  >
+          <p>Band Name Concert</p>
+        </div>
+      </div>
+      <div class="row" >
+        <div class="col-md-12 col-sm-12">
+          <p id ="ticketPreOrd"> <span id="overlined">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span> ticket in pre-order <span id="overlined">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span></p></br>
+        </div>
+      </div>
+      <div class="row" >
+        <div class="col-md-3 col-sm-3"align ="right">
+        </div>
+        <div class="col-md-3 col-sm-3"align ="right">
+          <a href="http://www.google.com.ua">
+            <div id="usd30" >30$ normal
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-3">
+          <a href="http://www.google.com.ua">
+            <div id="usd45"  >45$ VIP
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-3"align ="right">
+        </div>
+      </div>
+      <div class="row" >
+        <div class="col-md-12 col-sm-12 icondown">
+        </div>
+      </div>
+    </div>
+    <div class = "nav navbar-default navbar-bottom">
+      <div class="container">
+      <p class="navbar-text" align="center"><a href="https://new.landingi.com/policy">Private policy</a></p>
+        <p class="navbar-text pull-right" >Generated by <a href="https://new.landingi.com/policy">Landingi</a></p>
+      </div>
+    </div>
+    
+    <script src="http://code.jquery.com/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
+
